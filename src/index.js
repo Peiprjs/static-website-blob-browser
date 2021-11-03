@@ -13,7 +13,7 @@ import { Aborter, ServiceURL, ContainerURL, StorageURL, AnonymousCredential } fr
 
 // Account name, and the container to list from
 const account = 'filespeiphy'
-const container = '$web'
+const container = 'photos'
 
 class App extends React.Component {
     constructor() {

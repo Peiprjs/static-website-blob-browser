@@ -2,6 +2,7 @@
   "name": "blobbrowser",
   "version": "0.1.0",
   "private": true,
+  "homepage" : "https://library.peiphy.xyz",
   "dependencies": {
     "@azure/storage-blob": "^10.1.0-preview",
     "namor": "^1.1.1",
