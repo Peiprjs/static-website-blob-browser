@@ -12,7 +12,7 @@ import "react-table/react-table.css";
 import { Aborter, ServiceURL, ContainerURL, StorageURL, AnonymousCredential } from "@azure/storage-blob";
 
 // Account name, and the container to list from
-const account = 'staticwebsitedemo'
+const account = 'filespeiphy'
 const container = '$web'
 
 class App extends React.Component {
