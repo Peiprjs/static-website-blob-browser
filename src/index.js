@@ -110,7 +110,7 @@ class App extends React.Component {
 
     // Custom links for various scenarios (handles blobs, directories and go back link)
     renderLink(blobName) {
-        var link = "https://mscssstatic.blob.core.windows.net/staticwebsite";
+        var link = "https://peiphylib.blob.core.windows.net/files/";
         if(blobName === "../")
         {
             link += "/index.html"
