@@ -12,8 +12,8 @@ import "react-table/react-table.css";
 import { Aborter, ServiceURL, ContainerURL, StorageURL, AnonymousCredential } from "@azure/storage-blob";
 
 // Account name, and the container to list from
-const account = 'staticwebsitedemo'
-const container = '$web'
+const account = 'peiphylib'
+const container = 'files'
 
 class App extends React.Component {
     constructor() {
@@ -110,16 +110,16 @@ class App extends React.Component {
 
     // Custom links for various scenarios (handles blobs, directories and go back link)
     renderLink(blobName) {
-        var link;
+        var link = "https://mscssstatic.blob.core.windows.net/staticwebsite";
         if(blobName === "../")
         {
-            link = "/"
+            link += "/index.html"
         }
         else if(blobName.slice(-1) === "/")
         {
             link = "?prefix=" + blobName
         } else {
-            link = "/" + blobName
+            link += "/" + blobName
         }
         return (
             <a href={link}>
